@@ -1,16 +1,43 @@
-# Multilingual Scam Detection Agent
+# Multilingual Scam Detection System
 
-A comprehensive AI-powered system for detecting scams across WhatsApp messages, voice notes, and website URLs in multiple languages.
+An AI-powered, multi-agent system that detects scams shared via website submissions — including text messages, voice notes, and suspicious URLs — across multiple languages and formats.
 
-## Features
+Built with LangGraph, Node.js, Gemini LLM, Pinecone, and Google Cloud services, the system identifies scams using semantic similarity, emotional tone, real-time threat intelligence, and phishing detection APIs.
 
-- Website URL phishing detection using Google Safe Browsing API
-- WhatsApp message scam detection using Meta Cloud API
-- Voice-to-text analysis for WhatsApp voice notes
-- Text-to-voice feedback for accessibility
-- Multi-language support (English, Spanish, French)
-- Real-time risk classification with justifications
-- Modern web interface for easy interaction
+---
+
+## 🚀 Features
+
+- ✅ **Smart Scam Detection via Website** — Users can submit suspicious text, voice notes, or URLs directly from a web interface.
+- 🧠 **Multi-Agent AI Architecture** — Specialized agents for text similarity, threat intelligence, voice tone/emotion analysis, and phishing detection.
+- 🔍 **Text Scam Detection** — Uses a Pinecone vector database with 50,000+ embedded real-world scam examples + Gemini LLM for contextual understanding.
+- 🔊 **Voice Scam Analysis** — Transcribes speech using Google STT, analyzes tone and urgency, and evaluates emotional cues before running LLM-based analysis.
+- 🌐 **URL Phishing Detection** — Uses Google Safe Browsing API to scan for known malicious links.
+- 🗣️ **Multilingual Support** — Supports multiple languages (e.g., English, Hindi, Spanish) in both voice and text.
+- ⚡ **Instant Risk Classification** — Outputs a risk level, confidence score, and explanation — optionally converted to voice response using Google TTS.
+- 💻 **Modern Frontend** — Built with React and JavaScript, ensuring seamless user experience directly via browser.
+
+---
+
+## 🧩 Architecture Diagrams
+
+### 🔧 Technical System Architecture
+![technical-diagram](./technical-diagram.png)
+
+### 🔁 User Flow
+![user-flow-diagram](./user-flow-diagram.png)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, JavaScript
+- **Backend:** Node.js, LangGraph
+- **LLM Services:** Gemini 1.5 Flash
+- **Voice Processing:** Google Cloud Speech-to-Text, Text-to-Speech
+- **URL Analysis:** Google Safe Browsing API
+- **Semantic Matching:** Pinecone Vector DB
+- **Storage/Logs:** Supabase / PostgreSQL
 
 ## Project Structure
 
