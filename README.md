@@ -22,10 +22,10 @@ Built with LangGraph, Node.js, Gemini LLM, Pinecone, and Google Cloud services, 
 ## 🧩 Architecture Diagrams
 
 ### 🔧 Technical System Architecture
-![technical-diagram](./technical-diagram.png)
+![technical-diagram](./technical_architecture.png)
 
 ### 🔁 User Flow
-![user-flow-diagram](./user-flow-diagram.png)
+![user-flow-diagram](./User_flow_diagram.png)
 
 ---
 
